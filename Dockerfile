@@ -8,6 +8,7 @@ RUN apk --no-cache add --update \
     openrc \
     busybox-initscripts \
     python3 \
+    py-pip \
     ansible
 
 # Install Ansible inventory file.
