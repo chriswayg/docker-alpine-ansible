@@ -19,7 +19,7 @@ This image is built on Docker Hub automatically any time the upstream OS contain
   1. [Install Docker](https://docs.docker.com/engine/installation/).
   2. Pull this image from Docker Hub: `docker pull chriswayg/docker-alpine-ansible` (or use the tag you built earlier, e.g. `local-alpine-ansible`).
   3. Run a container from the image: (to test my Ansible roles, I add in a volume mounted from the current working directory).
-  
+
           docker run --detach --privileged --name alpine_ansible_1 \
           --volume=$(pwd):/etc/ansible/roles/role_under_test:rw \
           chriswayg/docker-alpine-ansible
@@ -38,3 +38,4 @@ I use Docker to test my Ansible roles and playbooks on multiple OSes using CI to
 ## Authors
 
 - Christian Wagner, based on code from [Jeff Geerling's Github repositories](https://github.com/geerlingguy) 'Docker containers for Ansible playbook and role testing', such as `docker-{distro}-ansible`
+- With code from [alpine-openrc](https://github.com/dockage/alpine-openrc/) by Dockage
