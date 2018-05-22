@@ -27,7 +27,6 @@ RUN apk --no-cache add --update \
  && rm -vf \
       /etc/init.d/hwdrivers \
       /etc/init.d/hwclock \
-      /etc/init.d/hwdrivers \
       /etc/init.d/modules \
       /etc/init.d/modules-load \
       /etc/init.d/modloop \
